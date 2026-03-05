@@ -1,0 +1,13 @@
+name: Run Python
+
+on: push
+
+jobs:
+  run-python:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run Python Script
+        run: python exp 1- monoalphabetic cipher
